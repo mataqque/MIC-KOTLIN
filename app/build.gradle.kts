@@ -50,7 +50,10 @@ android {
 }
 
 dependencies {
-
+    implementation(libs.socket.io.client)
+     implementation(libs.androidx.media)
+    implementation(libs.okhttp)
+    implementation(libs.androidx.appcompat)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
