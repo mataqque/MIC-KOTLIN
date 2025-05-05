@@ -130,7 +130,7 @@ class VirtualMicService : Service() {
         )
 
         mediaCodec = MediaCodec.createEncoderByType(MediaFormat.MIMETYPE_AUDIO_OPUS).apply {
-            val format = MediaFormat().apply {
+           val format = MediaFormat().apply {
                 setString(MediaFormat.KEY_MIME, MediaFormat.MIMETYPE_AUDIO_OPUS)
                 setInteger(MediaFormat.KEY_SAMPLE_RATE, SAMPLE_RATE)
                 setInteger(MediaFormat.KEY_CHANNEL_COUNT, 1)
